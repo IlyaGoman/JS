@@ -1,4 +1,4 @@
-1.
+1. Information
     Спецификация
             https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
     
@@ -9,4 +9,4 @@
             MSDN
                 https://docs.microsoft.com/ru-ru/
 
-                
+
