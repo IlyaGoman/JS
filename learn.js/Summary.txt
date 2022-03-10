@@ -1,4 +1,5 @@
 1. Information
+
     Спецификация
             https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
     
@@ -9,4 +10,14 @@
             MSDN
                 https://docs.microsoft.com/ru-ru/
 
+2. Browser enviroment
 
+    window (Global object)
+        - DOM (Document Object Model) - объектая модель документа, пердоставляет доступ к содержимому страницы в виде объектов.
+            DOM Living Standart
+                https://dom.spec.whatwg.org/
+        - BOM (Browser Object Model) - доп.объекты, чтобы работать со всем, кроме document
+            Спецификация HTML
+                https://html.spec.whatwg.org/
+
+        https://spec.whatwg.org/
