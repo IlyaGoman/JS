@@ -6,8 +6,12 @@
   <p>Перед скриптом...</p>
 
   <script>
-    let result = prompt("What is your name?");
-    alert(`Your name is ${result}`);
+    let result = prompt("Какое «официальное» название JavaScript?");
+    if (result == 'ECMAScript') {
+      alert('Yes');
+    } else {
+      alert('NO');
+    }
   </script>
 
   <p>...После скрипта.</p>
