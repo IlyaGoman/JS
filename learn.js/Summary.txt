@@ -1,0 +1,12 @@
+1.
+    Спецификация
+            https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+    
+    Справочники
+            MDN (Mozilla) JavaScript Reference
+                https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference
+            
+            MSDN
+                https://docs.microsoft.com/ru-ru/
+
+                
