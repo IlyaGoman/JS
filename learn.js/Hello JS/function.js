@@ -5,22 +5,33 @@
 // let func = sayHi;
 // func();
 
-function ask(question, yes, no){
-    if(confirm(question)){
-        yes();
-    }
-    else{
-        no();
-    }
-}
+// function ask(question, yes, no){
+//     if(confirm(question)){
+//         yes();
+//     }
+//     else{
+//         no();
+//     }
+// }
 
 
-function showYes(){
-    alert("YES");
-}
+// function showYes(){
+//     alert("YES");
+// }
 
-function showNo() {
-    alert("NO");
-}
+// function showNo() {
+//     alert("NO");
+// }
 
-ask("Yes or No?", showYes, showNo)
+// ask("Yes or No?", showYes, showNo)
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+  
+  ask(
+    "Вы согласны?",
+    () => { alert("Вы согласились."); },
+    () => { alert("Вы отменили выполнение."); }
+  );

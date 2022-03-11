@@ -158,6 +158,14 @@
                 sayHi();
 
             Функции-"коллбэки"
-                
+                передача функции как значения
+                function ask(question, yes, no){
+                    (confirm(question)) ? yes() : no();
+                 } 
+                 Здесь yes и no функции yes() и no().
 
-                
+            Стрелочные функции
+                let func = (arg1, arg2, ...argN) => expression;
+
+                let sum = (a, b) => a + b;
+                alert( sum(1, 2) ); // 3
