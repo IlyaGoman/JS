@@ -89,3 +89,75 @@
             Boolean(value)
                 - Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false
                 - Все остальное - true.
+
+
+        Циклы
+
+            while(i < 3)
+            {
+                alert(i);
+                i++;
+            }
+
+            do
+            {
+                alert(i);
+                i++;
+            } while(condition)
+
+            for(let i = 0; i < 3; i++)
+            {
+                alert(i);
+            }
+
+            Метка для break/continue до определенного уровня вложенности.
+            labelName: 
+            for(let i = 0; i < 3; i++)
+            {
+                for(let j = 0; j < 3; j++)
+                {
+                    if(i % 2 === 0)
+                        {
+                            break labelName;
+                        }    
+                    alert(i);
+                }
+            }
+
+        Проверка на равенство в switch() всегда строгая, поэтому кроме значения должен совпадать и тип.
+        SWITCH(x)
+        {
+            case value1:
+                alert(x);
+                break;
+
+            case value2:
+                alert(x);
+                break;
+
+            case value3:
+                alert(x);
+                break;
+            
+            default:
+                alert(x);
+        }
+
+        Функции
+
+            function nameFunc(params){
+                body;
+            }
+
+            Function Expression
+
+                let sayHi = function(){
+                    alert("Hi");
+                }
+
+                sayHi();
+
+            Функции-"коллбэки"
+                
+
+                
