@@ -169,3 +169,50 @@
 
                 let sum = (a, b) => a + b;
                 alert( sum(1, 2) ); // 3
+
+        Тестирование (mocha)
+            Тестирование через поведение(TDD)
+                describe("nameFunction", function(){
+
+                    it("Описание процесса и результата", function(){
+                        assert.equal("nameFunction"(params), result)
+                        //isNaN, isTrue etc...
+                    });
+                };)
+
+
+4. Объекты: Основы
+
+    Объекты
+        let user = new object();
+        или
+        let user = {};
+
+        let user = {
+            name: "Ilya",
+            age: 36
+        }
+        alert(user.name);
+
+        Добавление св-ва объекта
+            user.fullName = "Ilya Goman";
+        Удаление св-ва
+            delete user.fullName;
+
+        Имена св-в через переменные
+            function makeUser(name, age){
+                return {
+                    name: name,
+                    age: age
+                };
+            }
+
+        Проверка существования св-ва в объекте через in
+            let user = {name: "Ilya", age: 30};
+            alert("name" in user); //return true
+            alert("isAdmin" in user); //return false
+
+        Цикл for key in objectName перебирает все св-ва объекта
+            for (key in user){
+                alert(key);
+            }
