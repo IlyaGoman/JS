@@ -29,7 +29,9 @@ function ask(question, yes, no) {
     if (confirm(question)) yes()
     else no();
 
-    for (let i = 0; i < 15; i++) {
+    for     (let i = 0; i < 15  ; i++) 
+    
+    {
       console.log(i);
     }
   }
