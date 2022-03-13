@@ -7,4 +7,16 @@ describe("pow", function(){
     it("2 в 4 степени будет 16", function(){
         assert.equal(pow(2, 4), 16);
     });
+
+
+    function makeTest(x){
+        let extanded = x * x * x;
+        it(`${x} в степени 3 будет ${extanded}`, function() {
+            assert.equal(pow(x, 3), extanded);
+        });
+    }
+
+    for (let i = 1; i < 10; i++) {
+        makeTest(i);
+    }
 });
