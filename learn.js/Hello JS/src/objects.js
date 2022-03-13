@@ -25,8 +25,8 @@ alert( isEmpty(schedule) ); // false
 function isEmpty(obj) {
     let cnt = 0;
     for (const key in obj) {
-        return true;
+        return false;
     }
 
-    return false;
+    return true;
 }
