@@ -30,3 +30,30 @@ function isEmpty(obj) {
 
     return true;
 }
+
+alert("Copy object");
+
+let iAm = {
+    name: "ILya",
+    age: 36,
+    size: {
+        height: 176,
+        weight: 69
+    }
+}
+
+let you = {};
+
+for (const key in iAm) {
+    if (typeof(iAm[key]) == "object") {
+           you[key] = Object.assign({}, iAm[key]);     
+    }
+    else{
+        you[key] = iAm[key];
+    }
+}
+
+you.size.weight = 179;
+
+alert(iAm.size.weight);
+alert(you.size.weight);

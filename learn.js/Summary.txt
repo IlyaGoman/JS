@@ -212,7 +212,26 @@
             alert("name" in user); //return true
             alert("isAdmin" in user); //return false
 
-        Цикл for key in objectName перебирает все св-ва объекта
+        Цикл for (key in objectName) перебирает все св-ва объекта
             for (key in user){
                 alert(key);
             }
+
+        Обеъкты ссылочные типа.
+            let a = {name: "Ilya"};
+            let b = a; a и b один и тот же объект!
+            b.name = "John";
+            alert(a.name); //John
+
+        Для клонирования обектов:
+            1) let a = {name: "Ilya"};
+               let b = {};
+               for (let key in a){
+                   b[key] = a[key];
+               }
+            2) Object.assign(dest, src1, src2....srcN) - клонируем в объект dest объекты src1, src2...srcN.
+               Одинаковые сво-ва перезаписываются!
+               let a = {name: "Ilya"};
+               let b = Object.assign({}, a); // a и b независимые объекты.
+               Не забывать, что свойством объекта может быть другой объект, тогда примитивное копирование не пройдет!
+               В этом случае необходима проверка, что свойство является объектом.
