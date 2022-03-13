@@ -1,7 +1,7 @@
 describe("pow", function(){
 
     it("отрицательный аргумент выдаст NaN", function(){
-        assert.isNaN(pow(-2, 4), NaN);
+        assert.isNaN(pow(-2, 4));
     });
 
     it("2 в 3 степени будет 8", function(){
