@@ -183,7 +183,7 @@
 
 4. Объекты: Основы
 
-    Объекты
+    Объекты - ключом может быть только строка!
         let user = new object();
         или
         let user = {};
@@ -365,3 +365,86 @@
 
             str.trim() - пробелы в начале и конце строки
             str.repeat(n) - Повторяет строк n раз.
+
+        Итерируемые объекты
+
+            Объекты содержащие метод с именем Symbol.iterator, чтобы можно было перебирать циклом for .. of ..
+            Этот метод возвращает итератор next(), который и выполняет перебор.
+            Результат next() должен быть вида {done: Boolean, value: any}
+
+            let range = {
+                from: 1,
+                to: 5
+            };
+            
+            //Добавим метод для итерации
+            range[Symbol.iterator] = function(){
+                return {
+                    current: this.from,
+                    last: this.to,
+                    next(){
+                        if(this.current <= this.last)
+                            return {done: false, value: this.current++};
+                        else {
+                            return {done: true};
+                        }
+                    }
+                };
+            };
+
+        Map и Set
+
+            Map - хранит коллекцию ключ/значение, позволяет использовать ключи любого типа.
+                new Map() - создает коллекцию
+                map.set(key, value) - устанавливает значение
+                map.get(key) - получает значение по ключу
+                map.has(key) - true, если ключ существует
+                map.delete(key) - удалает по ключу
+                map.clear() - очищает всю коллекцию
+                map.size - возвращает размер коллекции
+
+                let map = new Map();
+
+                map.set("1", "str1");
+                map.set(1, "str2");
+                map.set(true, "bool1");
+
+                alert( map.get(1) ); //"str2"
+                alert( map.get(true) ); //"bool1"
+                alert( map.size ); //3
+
+                В качестве ключей можно использователь объекты!
+
+                Т.к. .set возвращает каждый раз map, то:
+                    
+                    map.set("1", "str1");
+                    map.set(1, "str2");
+                    map.set(true, "bool1");
+                можно заменить на:
+                    map.set("1", "str1");
+                       .set(1, "str2");
+                       .set(true, "bool1");
+
+                Перебор в Map(for .. of ..)
+                    map.keys() - перебор всех ключей
+                    map.values() - перебор всех значений
+                    map.entries() - возвращает итерируемый объект вида [key, value]
+
+                    map.forEach((value, key, map) => {alert(`${key} : ${value}`)};)
+
+                Object.entries(obj) - преобразует любой объект к Map
+                Object.fromEntries(map) - преобразует Map в объект
+
+            Set - коллекция без ключей, где каждое значение может быть только один раз.
+                set.add(value);
+                set.delete(value);
+                set has(value);
+                set.clear();
+                set.size
+
+                Для перебора либо for/of, либо forEach()
+                    set.forEach((value, valueAgain, set) => {alert(value)};) //valueAgain существует для совместимости с Map
+                    set.keys() - перебор всех ключей
+                    set.values() - перебор всех значений
+                    set.entries() - возвращает итерируемый объект вида [value, value]
+
