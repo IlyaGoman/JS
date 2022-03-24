@@ -1,7 +1,7 @@
 let salaries = {
-    "Jonh": 100,
-    "Pete": 300,
-    "Mary": 250
+    'Jonh': 100,
+    'Pete': 300,
+    "Mary": 250,
 };
 
 function topSalary(salaries) {
@@ -18,3 +18,11 @@ function topSalary(salaries) {
 }
 
 alert(topSalary(salaries));
+
+let json = JSON.stringify(salaries);
+
+alert( json );
+
+let arr = ["I", "learn", "JS"]
+alert( arr.splice(1,1)) ; //["I", "JS"]
+alert( arr );

@@ -366,6 +366,46 @@
             str.trim() - пробелы в начале и конце строки
             str.repeat(n) - Повторяет строк n раз.
 
+        Методы массивов
+            arr.splice(index[, deleteCount, elem1, ..., elemN]) - удаление из массива
+                - index - с какого элемента начать
+                - deleteCount - сколько элементов удалить
+                - elem1...elemN - на какие элементы заменить
+
+                    ["I", "learn", "JS"].splice(1,1); //["I", "JS"]
+                    ["I", "learn", "JS"].splice(0,2, "ILYA", "GOMAN"); //["ILYA", "GOMAN", "JS"]
+            
+            arr.slice(start, end) - возвращает часть массива от start до end
+                arr.slice() - создаст копию массива
+            
+            arr.concat(arg1, arg2...) - создает новый массив, в который копирует все.
+                arr.concat([1,2,3], "ILYA", 1); //[1,2,3,"ILYA, 1]
+
+            arr.forEach(function(ite, index, array){
+                // ...что-то делам с item
+            });
+                arr.forEach(alert); вывод всех элементов массива
+
+            arr.indexOf(item, from) - ищем item с индекса from. Возвращает индекс или -1
+            arr.lastIndexOf(item, from) - ищет справа. Возвращает индекс или -1
+            arr.includes(item, from) - возвращает true, если найден
+
+            arr.find(function(item, index, array)) -  возвращает текущий элемент, иначе undefined
+                let user =[
+                    {id: 1, name: "ILYA"},
+                    {id: 2, name: "IVAN"},
+                    {id: 3, name: "YOULA"},
+                }
+                user = arr.find(item => item.id==1); 
+                alert (user.name ); //"ILYA"
+            arr.findIndex() - аналогично arr.find(), но возвращает индекс или -1
+
+            arr.filter(function(item, index, array)) - возвращает массив из всех подходящих
+
+            
+
+
+
         Итерируемые объекты
 
             Объекты содержащие метод с именем Symbol.iterator, чтобы можно было перебирать циклом for .. of ..
@@ -494,3 +534,15 @@
                     alert( title );//"Menu"
                     alert( w );//100
                     alert( h );//200
+
+    JSON
+        JSON.stringify(value, [replacer, space])
+            - value - значечние для кодирования
+            - replacer - массив св-в для кодирования или функция соответствия function(key, value)
+            - space - отступы
+
+            Пропускает функции, символы и undefined
+
+        JSON.parse(str, [revier])
+            - str - строка, которую необходимо разобрать
+            - revier - необязательная функция, которая будет вызываться для каждой пары (key, value)
