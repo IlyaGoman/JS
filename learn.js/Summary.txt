@@ -453,3 +453,44 @@
             WeakSet - аналог Set, но содержит в себе только объекты.
 
             WeakMap, WeakSet - нельзя перебирать!
+
+
+    Деструктирующее присваивание
+        Деструктурирующее присваивание – это специальный синтаксис, который позволяет нам «распаковать» массивы или объекты в кучу переменных, так как иногда они более удобны.
+
+            Массивы
+                let arr = ["Ilya", "Ivan"];
+                let [firstName, secondName] = arr;
+                alert(firstName); //"Ilya"
+                alert(secondName); //"Ivan"
+
+                let [firstName, secondName] = "Ilya Ivan".split(" ");
+
+                let user = {};
+                [user.name, user.secondName] = arr;
+
+                Остаточные параметры
+                    Если необходимо вытащить только часть параметров, а остальные запихнуть в массив, то:
+                    let arr = ["1", "2", "3", "4", "5"];
+                    let [a, b, ...c] = arr;
+                    alert( a );//"1"
+                    alert( b );//"2"
+                    alert( c );//["3", "4", "5"]
+            
+            Объекты
+                let optins {
+                    title: "Menu",
+                    width: 100,
+                    height: 200
+                };
+                let {title, width, height} = optins;
+                alert( title );//"Menu"
+                alert( width );//100
+                alert( height );//200
+                //Порядок переменных не имеет значение
+                //let {height, width, title} = optins; тоже будет работать
+                Если необходимо присвоить произвольной переменной:
+                    let {width: w, height: h, title} = optins;
+                    alert( title );//"Menu"
+                    alert( w );//100
+                    alert( h );//200
