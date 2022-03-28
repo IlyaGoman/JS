@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.header_control {
+    display: inline-flex;
+    color: navy;
+    margin: 20px;
+    padding: 8px;
+  }
+.find_box {
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: blueviolet;
+    background-color: aqua;
+    font: italic;
+    background-image: url('searchicon.png');
+    transition: width 0.4s ease-in-out;
+}
