@@ -1,19 +1,62 @@
+
 body {
-    background-color: lightblue;
+    background-color: #E5E5E5;
     margin: 0px;
     padding: 0px;
+}
+.page{
+    background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+    border-radius: 24px;
+    width: 1511px;
+    height: 886px;
+}
+.sitetoolbar{
+    display: block;
+    box-sizing: border-box;
+}
+.sitetoolbar_content{
+    display: flex;
+    border-collapse: collapse;
+    line-height: 24px;
 }
 
-.header_control {
-    display: inline-flex;
-    margin: 0px;
-    padding: 0px;
+.sitetoolbar_logo{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 87px;
+    top: 48px;
 }
-.search {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    background-color: #3cbc8d;    
+.sitetoolbar_text{
+    position: absolute;
+    width: 58px;
+    height: 45px;
+    left: 123px;
+    top: 46px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 139.8%;
+}
+.sitetoolbar_sections{
+    position: absolute;
+    display: inline-block;
+    top: 39px;
+    left: 359px;
+    flex-shrink: 0;
+    padding: 18px 0;
+}
+.sitetoolbar_section_list{
+}
+.sitetoolbar_section{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 94.8%;
+    color: #000000;
+    padding-right: 10px;
 }
