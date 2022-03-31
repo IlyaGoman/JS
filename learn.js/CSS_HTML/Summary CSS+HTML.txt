@@ -3,7 +3,7 @@
     <html lang="ru">
         <!--Заголовок страницы, контейнер для других данных, не отображается-->
         <head>
-            <titl>First page!</title>
+            <title>First page!</title>
             <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
         </head>
         <!--Тело страницы, все что видно-->
