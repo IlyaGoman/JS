@@ -76,3 +76,6 @@
         <button type="">Отправить</button>
             - submit - Отправить
             - reset - очистить форму
+
+2. CSS
+    
