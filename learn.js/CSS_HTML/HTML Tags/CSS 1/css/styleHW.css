@@ -83,49 +83,31 @@ h6 {
     font-weight: 400;
 }
 /*****************************/
-
-.arial {
+body{
+    padding: 50px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
-.fontsize30 {
+h1{
     font-size: 30px;
+    color: gray;
 }
 
-.fontstyle{
-    font-style: ;
-}
-
-.font700{
+.bold{
     font-weight: 700;
 }
 
-.colorred{
+.red{
     color: red;
 }
 
+.homework{
+    font-size: larger;
+}
+
 .textright{
-    text-align: justify;
+    text-align: right;
 }
 
-.decoration{
-    text-decoration: line-through;
-}
-
-.shadow{
-    text-shadow: 1px 1px 1px #000;
-}
-
-.transform{
-    text-transform: capitalize;
-}
-
-.ident{
-    text-indent: 20px;
-}
-
-.spacing{
-    letter-spacing: 2px;
-    white-space: normal;
-    line-height: 100px;
+.uppercase{
+    text-transform: uppercase;
 }

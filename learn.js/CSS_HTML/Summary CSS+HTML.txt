@@ -151,4 +151,34 @@
         h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
     ШРИФТЫ
-        font-family:
+        Property(snippet)
+        font-family(ffa) - смена шрифта 
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size(fz) - размер шрифта
+            font-size: 30px;
+        font-style(fs) - стиль текста
+            font-style: italic;
+                - italic - курсивный(имитация рукописного)
+                - oblique - наклонный
+                - normal - обычный
+        font-weight(fw) - толщина(вес) шрифта
+        color() - цвет
+        text-align(tal/tac/tar/taj) - выравнивание
+            - left
+            - center
+            - right
+            - justify - растягивать на всю ширину.
+        text-decoration(td) - подчеркивание/зачеркивание/линия сверху
+            - underlie
+            - overline
+            - line-through - зачеркивание
+        text-shadow - тень текста
+            text-shadow: 1px 1px 1px #000;
+        text-transform - заглавные/прописные/каждое слово с большой
+        text-ident(ti) - отступ первой строки
+        letter-spacing(ls) - расстояние между символами
+        word-spacing() - расстояние между словами
+        white-space() - перенос слов
+            - normal
+            - nowrap - запрет переноса слов
+        line-height(lh) - расстояние между строк
