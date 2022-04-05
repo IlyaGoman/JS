@@ -83,20 +83,23 @@ h6 {
     font-weight: 400;
 }
 /*****************************/
-.example-block {
-    padding: 10px 20px 30px 40px;
-    margin: 10px 10px 10px 10px;
-    width: 100%;
-    border: 2px solid blue;
-    max-width: 1000px;
+body {
+    padding: 30px;
 }
 
-.example-string {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid red;
-}
+.block {
+    /* background: rgb(228, 117, 117); */
+    /* background: url("../image/Foo.svg") center no-repeat; */
 
-.img {
-    width: 100px;
+    background: url("../image/chef-hat.svg") center/100px auto no-repeat scroll;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+38,2989d8+38,207cca+61,7db9e8+100 */
+    /* background: #1e5799; /* Old browsers */
+    /* background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 38%, #2989d8 38%, #207cca 61%, #7db9e8 100%); FF3.6-15 */
+    /* background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 38%,#2989d8 38%,#207cca 61%,#7db9e8 100%); Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 38%,#2989d8 38%,#207cca 61%,#7db9e8 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); IE6-9 */
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
 }

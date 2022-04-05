@@ -83,20 +83,21 @@ h6 {
     font-weight: 400;
 }
 /*****************************/
-.example-block {
-    padding: 10px 20px 30px 40px;
-    margin: 10px 10px 10px 10px;
-    width: 100%;
-    border: 2px solid blue;
-    max-width: 1000px;
+
+.example-block{
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px 10px #000;
+    border-radius: 10px;
+    font-size: 50px;
 }
 
-.example-string {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid red;
+.example-string{
+    border: 10px dashed #000;
+    font-size: 50px;
 }
 
-.img {
-    width: 100px;
+.img{
+
 }

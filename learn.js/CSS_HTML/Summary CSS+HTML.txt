@@ -242,4 +242,23 @@
             - hidden - скрыт(место занимает, но взаимодествовать нельзя)
 
     Backgroud
-        
+        Управляет фоном элемента
+
+        backgroud: цвет; //цвет фона
+        backgroud-color: цвет; //цвет фона
+
+        Для того, чтобы сделать градиент:
+        https://www.colorzilla.com/gradient-editor/
+
+        background-repeat: no-repeat; отмена повторения картинка
+
+        background-position - начальное положение
+            background: url("../image/Foo.svg") 0 0 no-repeat;
+            background: url("../image/Foo.svg") center no-repeat;
+        background-attachment - фиксирует/прокручивает фон
+            background-attachment: fixed;
+            background: url("../image/Foo.svg") center no-repeat fixed;
+
+        background-size - масштабирует фоновое изображение согласно заданным размерам
+            background: url("../image/Foo.svg") 0 0/auto auto no-repeat;
+            background: url("../image/chef-hat.svg") center/% auto no-repeat;
