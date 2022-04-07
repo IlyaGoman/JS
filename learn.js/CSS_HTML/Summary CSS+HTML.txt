@@ -262,3 +262,18 @@
         background-size - масштабирует фоновое изображение согласно заданным размерам
             background: url("../image/Foo.svg") 0 0/auto auto no-repeat;
             background: url("../image/chef-hat.svg") center/% auto no-repeat;
+
+            -cover - растягивает по большей стороне
+                background: url("../image/chef-hat.svg") center/cover no-repeat scroll;
+
+    Псевдоклассы
+
+        :hover - начинает действовать в момент наведения на элемент
+
+        :visited - работает для посущенных ссылок
+
+        :active - при нажатии на элемент
+
+        :focus - в момент получения фокуса
+
+        :first-child - обращается к первому элементу в блоке

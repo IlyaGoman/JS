@@ -91,7 +91,7 @@ body {
     /* background: rgb(228, 117, 117); */
     /* background: url("../image/Foo.svg") center no-repeat; */
 
-    background: url("../image/chef-hat.svg") center/100px auto no-repeat scroll;
+    background: url("../image/chef-hat.svg") center/cover no-repeat scroll;
 
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+38,2989d8+38,207cca+61,7db9e8+100 */
     /* background: #1e5799; /* Old browsers */
