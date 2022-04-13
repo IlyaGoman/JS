@@ -84,37 +84,69 @@ h6 {
 }
 /*****************************/
 body {
-    padding: 30px;
+    background-color: rgb(209, 214, 214);
+}
+h3 {
+    margin: 0px 0px 20px 0px;
+    font-size: 16px;
 }
 
-.block {
-    /* background: rgb(228, 117, 117); */
-    /* background: url("../image/Foo.svg") center no-repeat; */
-
-    background: url("../image/chef-hat.svg") center no-repeat scroll;
-
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+38,2989d8+38,207cca+61,7db9e8+100 */
-    /* background: #1e5799; /* Old browsers */
-    /* background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 38%, #2989d8 38%, #207cca 61%, #7db9e8 100%); FF3.6-15 */
-    /* background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 38%,#2989d8 38%,#207cca 61%,#7db9e8 100%); Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 38%,#2989d8 38%,#207cca 61%,#7db9e8 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); IE6-9 */
-    height: 300px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #000;
+.main {
+    border: 2px solid red;
+    margin: 100px 250px 0px 250px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ul {
+    margin: 0px 0px 20px 0px;
 }
 
-.parent p:last-child{
+li {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.first_list li:first-child {
+    text-decoration: line-through;
+}
+.first_list li:nth-child(2) {
+    font-weight: 700;
+}
+.first_list li:nth-child(3) {
+    font-style: italic;
+}
+.first_list li:last-child {
+    text-transform: uppercase;
+}
+
+.second_list li:first-child {
+    text-decoration: line-through;
+}
+.second_list li:nth-child(2):hover {
     color: red;
-    margin: 20px;
+}
+.second_list li:nth-child(3) {
+    font-style: italic;
+}
+.second_list li:last-child {
+    text-transform: uppercase;
 }
 
-.parent p:first-child{
-    color: blue;
-    margin: 20px;
+.button{
 }
 
-.parent p:nth-child(2){
-    color: green;
-    margin: 20px;
+.btn {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 30px 20px;
+    width: 120px;
+    height: 30px;
+    background: rgb(113, 153, 153);
+}
+
+.btn:hover{
+    background-color: rgb(83, 116, 116);
+}
+
+.btn:active{
+    background-color: rgb(184, 187, 187);
 }
