@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Меняет подсчет ширины блока */
+*,
+*::before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Линии обводки у браузеров */
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+/* Делаем блочными теги: */
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+/* Уравниваем поведение шрифтов и элементов для разных браузеров(например, запрет на самовольное увеличение шрифта на IPhone) */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* Наследование шрифтов*/
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+/* Убирается крестик в input */
+input::-ms-clear {
+    display: none;
+}
+/*Убираются отступы кнопок в разных браузерах*/
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+/*Чистятся стили маркированных списков*/
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+/*Обнуляем все заголовки*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/*****************************/
+
+body {
+    padding: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.block {
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 30px auto;
+    height: 1500px;
+    position: relative;
+}
+
+.block div {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.block__1 {
+    background-color: rgb(219, 85, 168);
+}
+.block__2 {
+    background-color: brown;
+    color: white;
+    position: absolute;
+}
+.block__3 {
+    background-color: cornflowerblue;
+}
