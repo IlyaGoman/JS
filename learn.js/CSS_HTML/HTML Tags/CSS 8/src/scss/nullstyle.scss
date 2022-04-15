@@ -1,90 +1,76 @@
-@charset "UTF-8";
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
-
 /* Меняет подсчет ширины блока */
 *,
 *::before,
 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 /* Линии обводки у браузеров */
 :focus,
 :active {
-  outline: none;
+    outline: none;
 }
-
 a:focus,
 a:active {
-  outline: none;
+    outline: none;
 }
-
 /* Делаем блочными теги: */
 nav,
 footer,
 header,
 aside {
-  display: block;
+    display: block;
 }
-
 /* Уравниваем поведение шрифтов и элементов для разных браузеров(например, запрет на самовольное увеличение шрифта на IPhone) */
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
-
 /* Наследование шрифтов*/
 input,
 button,
 textarea {
-  font-family: inherit;
+    font-family: inherit;
 }
-
 /* Убирается крестик в input */
 input::-ms-clear {
-  display: none;
+    display: none;
 }
-
 /*Убираются отступы кнопок в разных браузерах*/
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
-
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 }
-
 /*Чистятся стили маркированных списков*/
 a,
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 ul li {
-  list-style: none;
+    list-style: none;
 }
-
 img {
-  vertical-align: top;
+    vertical-align: top;
 }
-
 /*Обнуляем все заголовки*/
 h1,
 h2,
@@ -92,37 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: 400;
+    font-size: inherit;
+    font-weight: 400;
 }
-
 /*****************************/
-.link {
-  border-bottom: 2px dotted green;
-}
-
-body {
-  padding: 30px;
-  background-color: brown;
-}
-
-p {
-  font-size: 24px;
-  line-height: 24px;
-  background-color: #151515;
-  color: #fff;
-  border-radius: 8px;
-  width: 50rem;
-  padding: 20px;
-}
-
-.link {
-  font-size: 25px;
-  text-decoration: underline;
-}
-
-.link:hover {
-  color: yellow;
-  text-decoration: underline;
-}
-/*# sourceMappingURL=style.css.map */
